@@ -1,0 +1,215 @@
+<img src="photo.jpg" alt="Изображение примера" width="200" height="150">
+
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+
+
+<div class="buttons">
+    <button type="button" class="button">inline</button>
+
+
+    <button type="button" class="button">block</button>
+    <button type="button" class="button">inline-block</button>
+</div>
+<div class="buttons">
+    <button type="button" class="button">HTML</button>
+    <button type="button" class="button">CSS</button>
+    <button type="button" class="button">JavaScript</button>
+</div>
+
+
+<div class='box'>
+    <a href="#" class='link-inline'><span>Текст</span></a>
+    без переноса на новую строку
+</div>
+<div class='box'>
+    <a href="#" class='link-block'>
+        <p>Текст</p>
+    </a>
+    с переносом на новую строку
+</div>
+
+
+<div class="card">
+    <h4 class="card-title">Порядок загрузки файлов браузером</h4>
+    <ol class="card-items">
+        <li class="card-item">Файл html</li>
+        <li class="card-item">Ссылки на файлы внутри тега head</li>
+        <li class="card-item">Ссылки на файлы внутри body</li>
+
+
+    </ol>
+</div>
+
+
+<ul class="cards">
+    <li class="card">
+        <h4 class="card-title">Карточка о теме 1</h4>
+        <div class="wrp-img">
+            <img class="card-image" src="photo.jpg" alt="описание фото">
+        </div>
+        <p class="card-description">Подробное описание темы 1</p>
+    </li>
+    <li class="card">
+
+        <h4 class="card-title">Карточка о теме 2</h4>
+        <div class="wrp-img">
+            <img class="card-image" src="photo2.jpg" alt="описание фото">
+        </div>
+        <p class="card-description">Подробное описание темы 2</p>
+    </li>
+    <li class="card">
+        <h4 class="card-title">Карточка о теме 3</h4>
+        <div class="wrp-img">
+            <img class="card-image" src="photo3.jpg" alt="описание фото">
+        </div>
+        <p class="card-description">Подробное описание темы 3</p>
+    </li>
+</ul>
+
+
+<a href="https://goit.com.ua" target="_blank" rel="noreferrer noopener nofollow">
+    GoIT
+</a>
+
+<a href="resume.pdf" download>Резюме</a>
+
+
+<!-- Ссылка на телефонный номер -->
+<a href="tel:+14251234563">+1 (425) 123-45-63</a>
+<!-- Ссылка на адрес электронной почты  -->
+<a href="mailto:example@gmail.com">example@gmail.com</a>
+
+
+
+<header id="top">
+    <!-- контент из logo, nav, поиска  -->
+</header>
+<main>
+    <aside>
+        <ul>
+            <li><a href="#top">Вверх страницы</a></li>
+            <li><a href="#page-theme">К основной теме</a></li>
+            <li><a href="#bottom">Вниз страницы</a></li>
+        </ul>
+    </aside>
+    <article id="page-theme">
+        <!-- основная тема страницы  -->
+    </article>
+</main>
+<footer id="bottom">
+    <!-- контент из logo, nav, контактов, копирайта  -->
+</footer>
+
+
+<figure> <img src="photo.jpg" alt="описание фото" />
+    <figcaption>
+        Внутри ссылки допускается размещение только одного элемента img, любого количества текста или элементов.
+        Запрещается размещать интерактивные элементы.
+    </figcaption>
+</figure>
+
+
+<a href="./about">
+    <img src="photo.jpg" alt="запись в ноутбуке" />
+</a>
+<a href="./about">
+    <img src="photo2.jpg" alt="запись на бумаге" />
+</a>
+
+
+<!--  TODO 
+* создать проект со структурой:
+images/logo.svg
+css/style.css
+about.html
+index.html
+ -->
+
+
+<!-- файл about.html -->
+<a href="../index.html">
+    <img src="../images/logo.png" alt="logo">
+</a>
+
+
+<!-- файл about.html -->
+<a href="../index.html">
+    <img src="../images/logo.png" alt="logo">
+</a>
+
+
+2й модуль
+
+<dl>
+    <dt>Тег span.</dt>
+    <dd>Универсальный контейнер для текстового контента.</dd>
+    <dt>Тег pre.</dt>
+    <dd>Сохранение пробелов и переносов.</dd>
+    <dt>Тег sup и sub.</dt>
+    <dd>Отображение символов в верхнем и нижнем индексе.</dd>
+    <dt>Тег strong.</dt>
+    <dd>Выделение важного слова или целой фразы внутри текста.</dd>
+    <dt>Тег b.</dt>
+    <dd>Визульное выделение текста более толстым шрифтом.</dd>
+    <dt>Тег em.</dt>
+    <dd>Семантически и визуально (курсив) выделяет текст.</dd>
+    <dt>Тег i.</dt>
+    <dd>Визуально (курсив) выделяет текст.</dd>
+    <dt>Тег address.</dt>
+    <dd>Оборачивает теги с контентом об адресе или получателе.</dd>
+</dl>
+
+
+<p>
+    Эпоха Unix стартовала в <time datetime="1970-01-01T00:00">полночь на 01 января 1970 года</time>
+</p>
+
+
+<span>&#174;</span>
+
+<audio controls preload="none">
+    <source src="https://goit.ua/autocheck/bensound-summer.mp3" type="audio/mp3">
+</audio>
+
+
+<table>
+    <caption>
+        Как ведут себя block, inline и inline-block
+    </caption>
+    <thead>
+        <tr>
+            <th>/</th>
+            <th>block</th>
+            <th>inline</th>
+            <th>inline-block</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>height определяется</th>
+            <td colspan="3">высотой контента</td>
+
+        </tr>
+        <tr>
+            <th>width определяется</th>
+            <td>шириной родителя</td>
+            <td colspan="2">шириной контента</td>
+        </tr>
+        <tr>
+            <th>Можно ли задать height и width</th>
+            <td>можно</td>
+            <td>нельзя</td>
+            <td>можно</td>
+        </tr>
+        <tr>
+            <th>Как работает перенос на новую строку</th>
+            <td>всегда с новой строки</td>
+            <td colspan="2">только при заполнении ширины родителя</td>
+        </tr>
+
+    </tbody>
+</table>
